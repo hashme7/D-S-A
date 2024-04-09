@@ -2,9 +2,11 @@
 Welcome to the Data Structures and Algorithms (DSA) repository! This repository contains implementations of various data structures and algorithms in different programming languages.
 
 Introduction
+
 This repository serves as a resource for learning and practicing data structures and algorithms. It includes both classic and advanced implementations, along with explanations and examples.
 
 Contents
+
 The repository is organized into folders for each data structure or algorithm. Here's an overview of the contents:
 
 Data Structures
