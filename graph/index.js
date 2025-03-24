@@ -100,27 +100,27 @@
 *                         Depth Fast Search                                     *
 *                                                                                 *
 **********************************************************************************/
-// let graph = { "a":["b","d"],
-//               "b":[],
-//               "c":[],
-//               "d":["e","g"],
-//               "e":["c"],
-//               "f":[],
-//               "g":["f"]
-//             };
-// let dfs = function(graph,source){
-//     let stack = [];
-//     stack.push(source);
-//     while(stack.length!=0){
-//         let node = stack.pop();
-//         console.log(node);
-//         for(let neighbour of graph[node]){
-//             console.log(neighbour,"(((((((((((")
-//             stack.push(neighbour);
-//         }
-//     }
-// }
-// dfs(graph,"a");
+let graph = { "a":["b","d"],
+              "b":[],
+              "c":[],
+              "d":["e","g"],
+              "e":["c"],
+              "f":[],
+              "g":["f"]
+            };
+let dfs = function(graph,source){
+    let stack = [];
+    stack.push(source);
+    let visited = [];
+    while(stack.length!=0){
+        let node = stack.pop();
+        console.log(node);
+        for(let neighbour of graph[node]){
+            stack.push(neighbour);
+        }
+    }
+}
+dfs(graph,"a");
 
 
 

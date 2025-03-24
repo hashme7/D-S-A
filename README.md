@@ -20,6 +20,6 @@ Data Structures
   
 Algorithms
 
-* Sorting: Implementation of various sorting algorithms such as bubble sort, merge sort, quick sort, etc.
+* Sorting: Implementation of various sorting algorithms such as bubble sort, merge sort, quick sort,Binary sort etc.
 * Searching: Implementation of various searching algorithms including linear search, binary search, etc.
 * DynamicProgramming: Implementation of dynamic programming algorithms.
