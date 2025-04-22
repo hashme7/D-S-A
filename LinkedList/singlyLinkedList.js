@@ -137,12 +137,19 @@ class linkedList {
 
         }
     }
-    reverseList(head,prev=null){
-        // console.log(head.next)
-        if(!head || !head.next)return prev;
-        let newNode = head.next;
-        head.next = prev;
-        return this.reverseList(newNode,head)
+    reverseList() {
+        if (!this.head) return;
+        let curr = this.head;
+        let next = curr.next;
+        let prev = null;
+        while (curr.next) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        curr.next = prev;
+        this.head =  curr;
     }
 }
 
@@ -153,7 +160,7 @@ ll.add(12);
 ll.add(1000);
 ll.add(200);
 ll.add(499)
-ll.reverseList(ll)
+ll.reverseList()
 // let middleMan = ll.middleMan()
 ll.display()
 // console.log(middleMan)
@@ -186,5 +193,8 @@ ll.display()
 // let current = newLinkedList
 // while(current){
 //     console.log(current.data)
-//     current = current.next  
+//     current = current.next
 // }
+
+
+// REVERSE LINKEDLIST

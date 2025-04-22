@@ -6,12 +6,10 @@
  * @return {number[]}
  */
 var sortArray = function(nums) {
-    console.log(nums,"nums");
    if(nums.length <= 1)return nums;
     let midIndx = nums.length/2;
     let firstHalf = nums.slice(0,midIndx);
     let lastHalf = nums.slice(midIndx,nums.length);
-    console.log(firstHalf,"********************");
     return join(sortArray(firstHalf),sortArray(lastHalf));
 };
 var join = function (firstHalf,lastHalf){
